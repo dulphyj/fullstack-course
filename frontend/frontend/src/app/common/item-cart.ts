@@ -1,0 +1,8 @@
+export class ItemCard {
+    constructor(public productId: number, public productName: string, public quantity: number, public price: number){
+    }
+
+    getTotalPriceItem(){
+        return this.quantity * this.price;
+    }
+}
